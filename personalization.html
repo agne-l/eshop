@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div>
+        <header id="header">
+            <div class="main-logo-wrapper"><a href="./index.html" class="main-logo">Puff's Vintage Wheels</a></div>
+            <div class="navbar-and-cart-wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CONTACTS</a></li>
+                        <li><a href="./personalization.html">PERSONALIZATION</a></li>
+                    </ul>
+                </nav>
+                <div id="cart" class="cart">
+                    <a href="#"><img id="cart-icon" class="cart-icon" src="./images/cart-1.512x499.png"></a>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="personalization-form">
+            <input placeholder="name" id="car-name">
+            <input placeholder="brand" id="car-brand">
+            <input placeholder="model" id="car-model">
+            <input placeholder="year" id="car-year">
+            <input placeholder="price" id="car-price">
+            <input placeholder="color" id="car-color">
+            <input placeholder="engine" id="car-engine">
+            <input placeholder="transmission" id="car-transmission">
+            <input placeholder="mileage" id="car-mileage">
+            <input placeholder="features (e.g. leather seats, radio, etc.)" id="car-features">
+            <input placeholder="image url" id="car-image">
+
+            <button id="customize-btn">CUSTOMIZE YOUR CAR</button>
+        </div>
+
+        <div class="message-wrapper" id="message-wrapper"></div>
+
+
+    </div>
+
+    <script src="./personalization.js"></script>
+    
+</body>
+</html>

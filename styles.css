@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px grey solid;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+
+
+.main-logo{
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    color: grey;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+.navbar-and-cart-wrapper{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+header ul a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgb(68, 67, 67);
+}
+
+header ul a:hover{
+    text-decoration: underline;
+    color: rgb(45, 45, 45);
+}
+
+.cart{
+    padding-right: 2rem;
+}
+
+.cart-icon{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.cars{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.car-wrapper{
+    width: 680px;
+    /* padding: 1.5rem; */
+    border: 1px grey solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.info-and-image-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 90%;
+    margin-left: 2rem;
+    /* margin-right: 1rem; */
+    margin-bottom: 1rem;
+
+}
+
+.add-to-cart-button{
+    all: unset;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top: 1px grey solid;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight:600;
+    background-color: rgb(217, 216, 216);
+}
+
+.add-to-cart-button:hover{
+    color: white;
+    background-color: rgb(181, 179, 179);
+}
+
+
+.img{
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+.notification{
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    border-radius: 50%;
+    background-color: rgb(243, 78, 124);
+    color: white;
+    position: absolute;
+    top: 4%;
+    right: 1.6%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.personalization-form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin:auto;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.personalization-form input{
+    padding: 0.3rem;
+}
+
+.personalization-form button{
+    padding: 0.3rem;
+}
+
+.message-wrapper{
+    width: 30%;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+}
