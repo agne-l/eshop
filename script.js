@@ -15,16 +15,20 @@ const getAllCars = async()=>{
     cars.forEach((car)=>{
         console.log(car);
 
-        const wrapper = document.createElement('a');
+        const wrapper = document.createElement('div');
         wrapper.setAttribute('class', 'car-wrapper');
         // wrapper.setAttribute('href', './car.html');
-        wrapper.href = './car.html';
-        wrapper.addEventListener('click', ()=>{
+        // wrapper.href = './car.html';
+        // wrapper.addEventListener('click', ()=>{
+        //     localStorage.setItem('carId', car.id);
+        // });
+
+        const carData = document.createElement('a');
+        carData.setAttribute('class', 'info-and-image-wrapper');
+        carData.href = './car.html';
+        carData.addEventListener('click', ()=>{
             localStorage.setItem('carId', car.id);
         });
-
-        const carData = document.createElement('div');
-        carData.setAttribute('class', 'info-and-image-wrapper');
 
 
         const carInfo = document.createElement('div');
@@ -97,6 +101,11 @@ const getAllCars = async()=>{
 
 
         addToCartButton.addEventListener('click', ()=>{
+
+            console.log(car.id);
+
+            localStorage.setItem('carId', car.id);
+
 
             const numberOfClicks = {
             };

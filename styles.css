@@ -75,9 +75,9 @@ header ul a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-decoration: none;
+    /* text-decoration: none;
     color: grey;
-    cursor:default;
+    cursor:default; */
     transition: 0.5s;
 }
 
@@ -93,6 +93,9 @@ header ul a:hover{
     margin-left: 2rem;
     /* margin-right: 1rem; */
     margin-bottom: 1rem;
+    text-decoration: none;
+    color: grey;
+    cursor: default;
 
 }
 
