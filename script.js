@@ -15,8 +15,13 @@ const getAllCars = async()=>{
     cars.forEach((car)=>{
         console.log(car);
 
-        const wrapper = document.createElement('div');
+        const wrapper = document.createElement('a');
         wrapper.setAttribute('class', 'car-wrapper');
+        // wrapper.setAttribute('href', './car.html');
+        wrapper.href = './car.html';
+        wrapper.addEventListener('click', ()=>{
+            localStorage.setItem('carId', car.id);
+        });
 
         const carData = document.createElement('div');
         carData.setAttribute('class', 'info-and-image-wrapper');

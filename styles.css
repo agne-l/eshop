@@ -67,13 +67,22 @@ header ul a:hover{
 
 .car-wrapper{
     width: 680px;
+    /* width: 100%; */
     /* padding: 1.5rem; */
     border: 1px grey solid;
+    /* border-right: none;
+    border-bottom: none; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-decoration: none;
+    color: grey;
+    cursor:default;
+    transition: 0.5s;
+}
 
-
+.car-wrapper:hover{
+    background-color: rgb(238, 236, 236);
 }
 
 .info-and-image-wrapper{
@@ -99,6 +108,7 @@ header ul a:hover{
     font-size: 0.8rem;
     font-weight:600;
     background-color: rgb(217, 216, 216);
+    transition: 0.5s;
 }
 
 .add-to-cart-button:hover{
@@ -153,4 +163,32 @@ header ul a:hover{
     margin: auto;
     margin-top: 2rem;
     text-align: center;
+}
+
+/* car.html styles */
+
+.specific-car-info-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 5rem; */
+    margin-top: 2rem;
+
+}
+
+.car-image-wrapper{
+    border: 1px grey solid;
+    border-right: none;
+}
+
+.car-image{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.car-description{
+    padding: 4rem;
+    border: 1px grey solid;
+    border-right: none;
+    border-left: none;
 }
